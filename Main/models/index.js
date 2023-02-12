@@ -4,17 +4,19 @@ const Comments = require('./Comments');
 
 // user has many posts
 Users.hasMany(Posts, {
-    foreignKey: 'author_id'
+    foreignKey: 'author_id',
+    onDelete: 'CASCADE',
 })
 
 // posts belong to users
 Posts.belongsTo(Users, {
-    foreignKey: 'author_id'
+    foreignKey: 'author_id',
 })
 
 // posts has many comments
 Posts.hasMany(Comments, {
-    foreignKey: 'post_id'
+    foreignKey: 'post_id',
+    onDelete: 'CASCADE',
 })
 
 // comments belongs to posts
