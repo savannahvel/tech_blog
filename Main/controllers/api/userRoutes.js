@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const { Users } = require('../../models');
 
-// The `/api/products` endpoint
+// The `/api/users` endpoint
 
 // Get all users
 router.get('/', async (req, res) => {
