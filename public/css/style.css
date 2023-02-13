@@ -1,0 +1,221 @@
+:root {
+    /* color selections */
+    --clr-text-primary: #9cc3ba;
+    --clr-text-hover: blanchedalmond;
+
+    /* font size */
+    --text-h1: 50px;
+    --text-h2: 30px;
+    --text-h3: 20px;
+    --text-p: 18px;
+}
+
+
+*,
+*:before,
+*:after {
+    /* general styling for whole page */
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: #9cc3ba;
+    font-family: Didot, Didot LT STD, Hoefler Text, Garamond, Calisto MT, Times New Roman, serif;
+}
+
+* h2 {
+    /* size for h2 */
+    font-size: var(--text-h2);
+}
+
+* h3 {
+    /* set default size for h3 */
+    font-size: var(--text-h3);
+}
+
+* p {
+    /* set default size for p */
+    font-size: var(--text-p);
+}
+
+body {
+    /* background image */
+    background-image: url('../images/hand_painted_black_watercolour_background_0407.jpg');
+}
+
+.nav-list {
+    /* styling for nav bar */
+    margin: 0;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: var(--text-p);
+    margin-left: 1rem;
+}
+
+.nav-item {
+    /* styling for nav items */
+    list-style: none;
+    margin-right:2rem;
+}
+
+.nav-item a {
+    /* styling for anchor tags in nav bar */
+    text-decoration: none;
+    color: var(--clr-text-primary);
+}
+
+.nav-item a:hover {
+    /* styling for hover on anchor items in nav bar */
+    color: var(--clr-text-hover);
+    transition: all 200ms ease-in;
+}
+
+h1[data-description="name"] {
+    /* styling for name header */
+    /* text-align: center; */
+    margin-left: 1rem;
+    background-color: transparent;
+    font-size: var(--text-h1);
+    margin-bottom: 1rem;
+}
+
+p[data-description="description"] {
+    /* styling for description in header */
+    text-align: center;
+    background-color: transparent;
+    font-size: var(--text-p);
+    margin-top: 15px;
+}
+
+img[data-description="landing-profile-picture"] {
+    /* styling for profile picture */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 40px;
+    max-height: 400px;
+    width: auto;
+}
+
+.aside {
+    /* aside section formatting */
+    margin-left: 20px;
+    padding: 20px;
+    clear: both;
+    float: left;
+    width: 20%;
+    height: 100%;
+    border-bottom: solid 1px;
+    border-color: blanchedalmond;
+}
+
+.aside h2 {
+    font-size: var(--text-h2);
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.main-header {
+    /* styling for project title section */
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-bottom: 20px;
+    display: flex;
+}
+
+.project-container {
+    /* project container's styling */
+    display: flex;
+    flex-wrap: wrap;
+    flex: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-project {
+    /* set main project default basis */
+    flex-basis: 90% !important;
+}
+
+.main-project img > div {
+    /* style image's container */
+    max-width: 100%;
+    max-height: 100%;
+    padding: 10px;
+}
+
+.main-project img {
+    /* set image to take up full width of container */
+    width: 100%;
+}
+
+.project-cards {
+    /* basic styling for project cards */
+    border-style:groove;
+    border-color: blanchedalmond;
+    border-width: 1px;
+    padding: 10px;
+    margin: 20px;
+    flex-basis: 28%
+}
+
+.project-cards h3 {
+    /* project card title formatting */
+    font-size: 25px;
+    background-color: black;
+    position: relative;
+    margin-top: -25px;
+    border-style: solid;
+    border-color: blanchedalmond;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.project-cards p {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.project-cards img > div {
+    /* style image's container */
+    max-width: 100%;
+    max-height: 100%;
+    padding: 10px;
+}
+
+.project-cards img {
+    /* set image to take up full width of container */
+    width: 100%;
+}
+
+.description {
+    padding: 1rem 0;
+}
+
+
+.contact-list {
+    margin: 0;
+    padding: 1rem 0;
+    align-items: center;
+    font-size: var(--text-p);
+}
+
+.contact-item {
+    /* styling for contact items */
+    list-style: none;
+    margin-right:2rem;
+    padding: 2px;
+}
+
+.contact-item a {
+    /* styling for anchor tags in contact bar */
+    text-decoration: none;
+    color: var(--clr-text-primary);
+}
+
+.contact-item a:hover {
+    /* styling for hover on anchor items in contact bar */
+    color: var(--clr-text-hover);
+    transition: all 200ms ease-in;
+}
