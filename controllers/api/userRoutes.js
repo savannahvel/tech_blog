@@ -23,7 +23,7 @@ router.post('/login', async (req, res) => {
       req.body.password,
       userData.password
     );
-    // const validPassword = await dbUserData.checkPassword(req.body.password);
+    
     // console.log("here")
     console.log(validPassword)
     // if they do not match, return error message
