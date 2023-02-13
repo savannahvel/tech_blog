@@ -95,7 +95,7 @@ router.delete('/:id', async (req, res) => {
             return;
         }
 
-        res.status(200).json(deletePostData);
+        res.status(200).json({ message: `Post id ${req.params.id} deleted successfully!` });
     } catch (err) {
         res.status(500).json(err)
     }

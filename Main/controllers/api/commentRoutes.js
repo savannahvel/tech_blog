@@ -40,16 +40,18 @@ router.get('/:id', async (req, res) => {
 
 // Create a new comment
 router.post('/', async (req, res) => {
-    // req body should look like: 
-    // {
-    //     
-    // }
-
+    /**
+     * {
+            "comment": "This is great content!", 
+            "post_id": 3,
+            "user_id": 2
+        }
+     */
     try {
         const newCommentData = await Comments.create({
             ...req.body,
             comment: req.body.comment,
-            post_id: req.body.post_idt,
+            post_id: req.body.post_id,
             user_id: req.body.user_id,
         })
         res.status(200).json(newCommentData);

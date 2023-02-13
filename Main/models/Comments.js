@@ -42,4 +42,4 @@ Comments.init(
     }
 )
 
-module.exports = Posts;
+module.exports = Comments;
